@@ -10,11 +10,11 @@
         </ul>
     @endif
 
-    <h1>id: {{ $work->id }} のタスク編集ページ</h1>
+    <h1>id: {{ $task->id }} のタスク編集ページ</h1>
 
     <div class="row">
         <div class="col-6">
-            {!! Form::model($work, ['route' => ['tasks.update', $work->id], 'method' => 'put']) !!}
+            {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
             
                 <div class="form-group">
                     {!! Form::label('status', 'ステータス:') !!}
